@@ -38,9 +38,9 @@ export class AddComponent implements OnInit{
 
   ngOnInit() {
     this.activatedRoute.data
-    .subscribe((data: { user: User, mode: string }) => {
-      this.user = data.user;
-      this.mode = data.mode;
+    .subscribe((data: any) => {
+      this.user = data.user as User;
+      this.mode = data.mode as string;
       if (this.mode == 'add') {
         this.userForm  = this.fb.group({
           idNumber: [null, Validators.required],
