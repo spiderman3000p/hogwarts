@@ -2,3 +2,70 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-toolbar .mat-button {
+  height: inherit;
+}
+.banner{
+  height: 300px;
+  margin: 0 -16px 16px -16px;
+  filter: drop-shadow(2px 4px 6px black);
+  box-shadow: inset 0px 5px 30px 10px rgb(0 0 0);
+}
+
+.characters-bg{
+  background: url('assets/images/characters-banner.jpg') no-repeat center top;
+  background-size: cover;
+}
+
+.students-bg{
+  background: url('assets/images/students-banner.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.teachers-bg{
+  background: url('assets/images/teachers-banner.jpeg') no-repeat top center;
+  background-size: cover;
+}
+
+.pt-0{
+  padding-top: 0px!important;
+}
+
+.mt-20{
+  margin-top: 20px!important;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.p-24{
+  padding: 24px!important;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.item-card {
+  min-width: 200px;
+  max-width: 280px;
+  width: 280px;
+}
+
+.item-header-image {
+  height: 300px;
+  background-size: cover;
+  margin: 0 -16px 16px -16px;
+  background-position: top center;
+}
+
+.mat-button.active{
+  background-color: rgb(37, 35, 68);
+}
+
+.main-button{
+  position: absolute !important;
+  top: 170px !important;
+  right: 50px !important;
+}
