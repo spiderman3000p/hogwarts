@@ -9,16 +9,16 @@
       <mat-card class="item-card mt-20" *ngFor="let teacher of teachers$ | async" fxFlex.lt-sm="100" fxFlex.lt-md="50" fxFlex.lt-lg="40">
         <mat-card-header>
           <!--div mat-card-avatar class="teacher-header-image"></div-->
-          <mat-card-title>{{teacher?.name}}</mat-card-title>
-          <mat-card-subtitle>{{teacher?.actor}}</mat-card-subtitle>
+          <mat-card-title>{{teacher.name}}</mat-card-title>
+          <mat-card-subtitle>{{teacher.actor}}</mat-card-subtitle>
         </mat-card-header>
         <div class="item-header-image" [style.background-image]="'url(' + teacher.image + ')'" [title]="'Photo of ' + teacher.name"></div>
         <mat-card-content>
 
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>{{teacher?.yearOfBirth > 0 ? ((year - teacher.yearOfBirth) + ' años') : 'Edad desc'}}</button>
-          <button mat-button>{{(teacher?.patronus?.length > 0 ? ('Patronus ' + teacher.patronus) : 'Sin patronus')}}</button>
+          <button mat-button>{{teacher.yearOfBirth > 0 ? ((year - teacher.yearOfBirth) + ' años') : 'Edad desc'}}</button>
+          <button mat-button>{{(teacher.patronus.length > 0 ? ('Patronus ' + teacher.patronus) : 'Sin patronus')}}</button>
         </mat-card-actions>
       </mat-card>
     </div>

@@ -65,7 +65,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .main-button{
-  position: absolute !important;
-  top: 170px !important;
-  right: 50px !important;
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  z-index: 999;
 }
